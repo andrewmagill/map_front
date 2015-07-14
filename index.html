@@ -4,33 +4,36 @@
   <meta charset=utf-8 />
 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-  
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>  
-  
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+
 </head>
 <body>
-  
+
   <div class="container" ng-controller="MainCtrl">
 
     <div class="row">
-      <form ng-submit="search(input)">          
+      <form ng-submit="search(input)">
         <div class="col-xs-6">
           <input type="text" class="form-control" ng-model="input" placeholder="enter address here">
         </div>
         <div class="col-xs-6">
           <button class="btn btn-primary">Button</button>
-        </div>          
+        </div>
       </form>
-    </div>    
-    
+    </div>
+
     <div class="row">
       <div class="col-xs-8">
         Candidates:<pre class="room" ng-bind="candidates|json"></pre>
         Parcels:<pre class="room" ng-bind="parcels|json"></pre>
-        Overlays:<pre class="room" ng-bind="overlays|json"></pre>        
+        Overlays:<pre class="room" ng-bind="overlays|json"></pre>
       </div>
-    </div>    
+    </div>
   </div>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
